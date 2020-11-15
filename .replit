@@ -1,2 +1,3 @@
 language = "java"
-run = "javac Main.java && java -cp .:./jars/junit-4.12.jar:./jars/hamcrest-core-1.3.jar org.junit.runner.JUnitCore"
+
+run = "javac MainTest.java Main.java -cp .:./jars/junit-4.12.jar:./jars/hamcrest-core-1.3.jar && java -cp .:./jars/junit-4.12.jar:./jars/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MainTest"
